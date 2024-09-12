@@ -1,0 +1,73 @@
+body {
+    background-color: bisque;
+}
+
+#duck {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 3.5em;
+    color: rgb(113, 44, 44);
+}
+
+
+.image-cont {
+    --size: 20em;
+    width: var(--size);
+    height: var(--size);
+    aspect-ratio: 1/1;
+}
+
+.image-cont img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-div,
+#duck {
+    --margin: 10em;
+    margin: 5em var(--margin);
+}
+
+.main-div {
+    color: rgb(113, 44, 44);
+    display: flex;
+    gap: 30em;
+}
+
+
+#my-button {
+    background-color: rgb(113, 44, 44);
+    color: white;
+}
+
+
+
+.tooltip {
+    display: none;
+    background-color: rgb(55, 168, 24);
+    border-radius: 10px;
+    color: black;
+    position: fixed;
+    padding: 4px;
+}
+
+.visible {
+    display: unset;
+}
+
+.tooltip {
+    display: none;
+    background-color: rgb(55, 168, 24);
+    border-radius: 10px;
+    color: black;
+    position: fixed;
+    padding: 4px;
+}
+
+.visible {
+    display: unset;
+}

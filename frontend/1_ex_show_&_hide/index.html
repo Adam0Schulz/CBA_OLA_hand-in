@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show & hide</title>
+    <script type="module" src="index.js" defer></script>
+    <style>
+        #btn {
+            font-size: 2em;
+            padding: 0.5em 2em;
+            background: linear-gradient(45deg, blue, purple);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            /*apparently doesn't work*/
+
+            margin-top: 50vh;
+            margin-left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        #btn:hover {
+            background: linear-gradient(45deg, purple, blue);
+        }
+
+        div {
+            display: none;
+            width: fit-content;
+            margin-left: 50vw;
+            transform: translateX(-50%);
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Hover over me!</button>
+    <div id="secret">This is the secret message</div>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+.li>p,
+.li>input {
+    display: inline-block;
+}

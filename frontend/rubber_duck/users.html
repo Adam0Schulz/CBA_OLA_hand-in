@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users form</title>
+    <script src="user.js" defer></script>
+</head>
+
+<body>
+    <form id="form">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email-input" required>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username-input" required minlength="4" maxlength="15">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password-input" required minlength="8">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
